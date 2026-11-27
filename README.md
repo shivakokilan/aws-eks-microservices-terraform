@@ -1,5 +1,5 @@
 # Production Amazon EKS (Kubernetes) & Microservices CI/CD (Terraform)
-
+[![Terraform CI Validation](https://github.com/shivakokilan/aws-eks-microservices-terraform/actions/workflows/terraform-validate.yml/badge.svg)](https://github.com/shivakokilan/aws-eks-microservices-terraform/actions/workflows/terraform-validate.yml)
 Infrastructure as Code (IaC) template provisioning a production-ready **Amazon EKS Kubernetes cluster** with managed worker node groups, IAM OIDC provider for IRSA (IAM Roles for Service Accounts), KMS secrets encryption, and automated GitHub Actions CI/CD validation.
 
 ## Architecture Overview
