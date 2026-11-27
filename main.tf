@@ -45,9 +45,9 @@ resource "aws_subnet" "eks_private_a" {
   availability_zone = "${var.aws_region}a"
 
   tags = {
-    Name                                          = "${var.cluster_name}-private-a"
-    "kubernetes.io/cluster/${var.cluster_name}"   = "shared"
-    "kubernetes.io/role/internal-elb"             = "1"
+    Name                                        = "${var.cluster_name}-private-a"
+    "kubernetes.io/cluster/${var.cluster_name}" = "shared"
+    "kubernetes.io/role/internal-elb"           = "1"
   }
 }
 
@@ -57,11 +57,12 @@ resource "aws_subnet" "eks_private_b" {
   availability_zone = "${var.aws_region}b"
 
   tags = {
-    Name                                          = "${var.cluster_name}-private-b"
-    "kubernetes.io/cluster/${var.cluster_name}"   = "shared"
-    "kubernetes.io/role/internal-elb"             = "1"
+    Name                                        = "${var.cluster_name}-private-b"
+    "kubernetes.io/cluster/${var.cluster_name}" = "shared"
+    "kubernetes.io/role/internal-elb"           = "1"
   }
 }
+
 
 # 3. IAM Role for Amazon EKS Control Plane
 resource "aws_iam_role" "eks_cluster_role" {
